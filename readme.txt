@@ -3,8 +3,8 @@ Contributors: bmsterling
 Donate link:http://benjaminsterling.com/donations/
 Tags: widgets, removal, inactive
 Requires at least: 3.0
-Tested up to: 3.1.1
-Stable tag: 0.2
+Tested up to: 3.5
+Stable tag: 0.2.1
 
 This plugin adds a button to the widget's admin page that will delete all inactive widgets.
 
