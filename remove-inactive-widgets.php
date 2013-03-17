@@ -3,12 +3,14 @@
 Plugin Name: Remove Inactive Widgets
 Plugin URI: http://benjaminsterling.com/wordpress-plugins/remove-inactive-widgets/
 Description: This plugin adds a button to the widget's admin page that will delete all inactive widgets.
-Version: 0.2.1
+Version: 0.2.2
 Author: Benjamin Sterling
 Author URI: http://kenzomedia.com
+Author Email: benjamin.sterling@kenzomedia.com
 License: 
 
-	Copyright 2011  Benjamin Sterling  (email : benjamin.sterling@kenzomedia.com)
+    Copyright 2013  Benjamin Sterling  (email : benjamin.sterling@kenzomedia.com)
+
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -22,7 +24,6 @@ License:
     You should have received a copy of the GNU General Public License
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-
 */
 
 function riw_admin_print_scripts( $arg ){
