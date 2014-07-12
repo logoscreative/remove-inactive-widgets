@@ -1,9 +1,9 @@
 === Remove Inactive Widgets ===
-Contributors: bmsterling 
+Contributors: bmsterling, cliffseal
 Donate link:http://benjaminsterling.com/donations/
 Tags: widgets, removal, inactive
-Requires at least: 3.0
-Tested up to: 3.5.1
+Requires at least: 3.9
+Tested up to: 3.9.1
 Stable tag: trunk
 
 This plugin adds a button to the widget's admin page that will delete all inactive widgets.
@@ -23,6 +23,10 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 
 == Changelog ==
+- 0.3
+Only show when inactive widgets exist
+Only remove deleted widgets when cleared
+
 - 0.2.2
 Verify working in 3.5.1
 Update licensing

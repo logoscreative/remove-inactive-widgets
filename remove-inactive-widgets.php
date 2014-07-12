@@ -3,8 +3,8 @@
 Plugin Name: Remove Inactive Widgets
 Plugin URI: http://benjaminsterling.com/wordpress-plugins/remove-inactive-widgets/
 Description: This plugin adds a button to the widget's admin page that will delete all inactive widgets.
-Version: 0.2.2
-Author: Benjamin Sterling
+Version: 0.3
+Author: Benjamin Sterling, Cliff Seal
 Author URI: http://kenzomedia.com
 Author Email: benjamin.sterling@kenzomedia.com
 License: 
@@ -29,8 +29,11 @@ License:
 function riw_admin_print_scripts( $arg ){
     global $pagenow;
     if (is_admin() && $pagenow == 'widgets.php') {
-        $js = plugins_url('/riw.js', __FILE__ );
-        wp_enqueue_script("riwscript", $js );
+        $widgets = get_option('sidebars_widgets');
+        if ($widgets['wp_inactive_widgets']) {
+            $js = plugins_url('/riw.js', __FILE__ );
+            wp_enqueue_script("riwscript", $js );
+        }
     }
 }
 
@@ -47,4 +50,3 @@ function riw_add_action(){
 add_action( 'admin_footer', 'riw_add_action' );
 add_action( 'wp_ajax_riw_async', 'riw_async' );
 add_action( 'admin_print_scripts', 'riw_admin_print_scripts' );
-?>
